@@ -1,0 +1,11 @@
+framework module zhmkit {
+  umbrella header "zhmkit.h"
+
+  export *
+  module * { export * }
+}
+
+module zhmkit.Swift {
+    header "zhmkit-Swift.h"
+    requires objc
+}

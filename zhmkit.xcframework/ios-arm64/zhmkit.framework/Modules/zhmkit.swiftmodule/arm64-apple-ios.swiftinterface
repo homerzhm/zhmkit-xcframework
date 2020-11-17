@@ -1,0 +1,26 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.3 (swiftlang-1200.0.29.2 clang-1200.0.30.1)
+// swift-module-flags: -target arm64-apple-ios14.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name zhmkit
+import Combine
+import Foundation
+import Swift
+import UIKit
+@_exported import zhmkit
+extension Array {
+  public func at(index: Swift.Int) -> Element?
+}
+extension UIImage {
+  public static func imageWithImage(image: UIKit.UIImage, newSize: CoreGraphics.CGSize) -> UIKit.UIImage?
+}
+extension UIView {
+  public func pin(to view: UIKit.UIView, padding: UIKit.UIEdgeInsets = UIEdgeInsets.zero)
+  public func pinToSuperView()
+  @discardableResult
+  public func layoutByConstraint() -> Self
+}
+extension AnyCancellable {
+  final public func dispose(at array: inout [Combine.AnyCancellable])
+}
+extension UIEdgeInsets {
+  public init(uniformPadding value: CoreGraphics.CGFloat)
+}
