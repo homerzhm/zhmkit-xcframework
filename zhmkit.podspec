@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "zhmkit"
-  spec.version      = "0.0.3"
+  spec.version      = "0.0.2"
   spec.summary      = "zhmkit"
 
   # This description is used to generate tags and improve search results.
@@ -81,7 +81,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.source       = { :git => "https://github.com/homerzhm/zhmkit-xcframework.git", :tag => "#{spec.version}" }
-  spec.vendored_frameworks = "zhmkit.xcframework"
+  spec.vendored_frameworks = "zhmkit.framework"
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
